@@ -3,7 +3,7 @@ export default function Labs() {
   return (
     <div id="wd-labs">
       <h1>Labs</h1>
-      <h2 id="wd-student-name">Motto Sereeyothin</h2>
+      <h2 id="wd-student-name">Weerapraj Sereeyothin</h2>
       <a
         href="https://github.com/msereeyothin/webdev-client"
         id="wd-github"
