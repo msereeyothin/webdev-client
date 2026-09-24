@@ -3,15 +3,67 @@ import Lesson from "./Lesson";
 export default function Modules() {
   return (
     <div>
-      {/* TODO: toolbar — Collapse All, View Progress, Publish All select, + Module */}
+      <button type="button">Collapse All</button>{" "}
+      <button type="button">View Progress</button>{" "}
+      <select defaultValue="publish-all">
+        <option value="publish-all">Publish All</option>
+      </select>{" "}
+      <button type="button">+ Module</button>
       <ul id="wd-modules">
         <Module title="Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda">
           <Lesson title="LEARNING OBJECTIVES">
-            {/* TODO: <li className="wd-content-item"> items */}
+            <li className="wd-content-item">Introduction to the course</li>
+            <li className="wd-content-item">Learn what is Web Development</li>
           </Lesson>
-          {/* TODO: READING and SLIDES lessons */}
+          <Lesson title="READING">
+            <li className="wd-content-item">
+              Full Stack Developer - Chapter 1 - Introduction
+            </li>
+            <li className="wd-content-item">
+              Full Stack Developer - Chapter 2 - Creating User Interfaces
+            </li>
+          </Lesson>
+          <Lesson title="SLIDES">
+            <li className="wd-content-item">Introduction to Web Development</li>
+            <li className="wd-content-item">
+              Creating an HTTP server with Node.js
+            </li>
+            <li className="wd-content-item">Creating a React Application</li>
+          </Lesson>
         </Module>
-        {/* TODO: Weeks 2–3 */}
+        <Module title="Week 2, Lecture 2 - Building User Interfaces with HTML">
+          <Lesson title="LEARNING OBJECTIVES">
+            <li className="wd-content-item">
+              Learn how to create user interfaces with HTML
+            </li>
+            <li className="wd-content-item">
+              Build forms, tables, and lists in Next.js components
+            </li>
+          </Lesson>
+          <Lesson title="READING">
+            <li className="wd-content-item">
+              Full Stack Developer - Chapter 1 - Building Next.js User
+              Interfaces with HTML
+            </li>
+          </Lesson>
+          <Lesson title="SLIDES">
+            <li className="wd-content-item">HTML Tags and Attributes</li>
+            <li className="wd-content-item">The Next.js App Router</li>
+          </Lesson>
+        </Module>
+        <Module title="Week 3, Lecture 3 - Styling with CSS">
+          <Lesson title="LEARNING OBJECTIVES">
+            <li className="wd-content-item">CSS Styling</li>
+            <li className="wd-content-item">
+              Lay out pages with Flexbox and Tailwind
+            </li>
+          </Lesson>
+          <Lesson title="READING">
+            <li className="wd-content-item">
+              Full Stack Developer - Chapter 2 - Styling Web Pages with CSS
+            </li>
+          </Lesson>
+        </Module>
       </ul>
     </div>
   );

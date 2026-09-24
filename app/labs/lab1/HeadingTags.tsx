@@ -42,7 +42,7 @@ export default function HeadingTags() {
 
       <div id="wd-your-heading">
         <h4>Motto Sereeyothin</h4>
-        I'm from <span id="wd-your-span">Bangkok, Thailand</span>.
+        I&apos;m from <span id="wd-your-span">Bangkok, Thailand</span>.
       </div>
     </div>
   );
