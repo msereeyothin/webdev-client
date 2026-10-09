@@ -1,30 +1,28 @@
 import Link from "next/link";
+const input = "mb-2 w-full rounded border border-neutral-300 p-2";
+const button = "mb-2 block rounded bg-blue-600 p-2 text-center text-white no-underline";
 export default function Signup() {
   return (
-    <div id="wd-signup-screen">
-      <h3>Sign up</h3>
-      <input
-        placeholder="username"
-        className="wd-username"
-        defaultValue="ada"
-      />
-      <br />
+    <div id="wd-signup-screen" className="max-w-sm">
+      <h1>Sign up</h1>
+      <input placeholder="username" defaultValue="ada" className={`wd-username ${input}`} />
       <input
         placeholder="password"
         type="password"
-        className="wd-password"
         defaultValue="123"
+        className={`wd-password ${input}`}
       />
-      <br />
       <input
         placeholder="verify password"
         type="password"
-        className="wd-password-verify"
+        className={`wd-password-verify ${input}`}
       />
-      <br />
-      <Link href="/account/profile">Sign up</Link>
-      <br />
-      <Link href="/account/signin">Sign in</Link>
+      <Link id="wd-signup-btn" href="/account/profile" className={button}>
+        Sign up
+      </Link>
+      <Link id="wd-signin-link" href="/account/signin">
+        Sign in
+      </Link>
     </div>
   );
 }
