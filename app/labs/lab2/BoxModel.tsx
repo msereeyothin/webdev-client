@@ -16,10 +16,15 @@ export default function BoxModel() {
       <h3>box-sizing</h3>
       <div className="wd-box-sizing-demo">
         <div className="wd-box-sizing-content">
-          content-box: width 200px plus padding and border
+          content-box: width 250px plus padding and border
         </div>
         <div className="wd-box-sizing-border">
-          border-box: width 200px includes padding and border
+          border-box: width 250px includes padding and border
+        </div>
+        {/* border-box keeps the declared width on screen; content-box adds
+            padding and border on top of it */}
+        <div id="wd-ai-box-sizing" className="wd-box-sizing-border">
+          border-box again: the painted box matches the declared width
         </div>
       </div>
     </div>

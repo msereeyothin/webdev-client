@@ -21,6 +21,21 @@ export default function GridLayout() {
           <h3>Side bar</h3>
         </div>
       </div>
+      <div id="wd-ai-grid" className="wd-grid-row">
+        <div className="wd-grid-col-third-page wd-bg-color-blue wd-fg-color-white">
+          One third
+        </div>
+        <div className="wd-grid-col-two-thirds-page wd-bg-color-yellow">
+          Two thirds
+        </div>
+      </div>
+      <div className="wd-grid-row">
+        <div className="wd-grid-col-third-page wd-bg-color-red">First</div>
+        <div className="wd-grid-col-third-page wd-bg-color-yellow">Second</div>
+        <div className="wd-grid-col-third-page wd-bg-color-green wd-fg-color-white">
+          Third
+        </div>
+      </div>
     </div>
   );
 }

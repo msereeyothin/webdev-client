@@ -30,6 +30,15 @@ export default function Display() {
           Block 3
         </span>
       </div>
+      <div
+        id="wd-ai-display"
+        className="wd-display-inline wd-bg-color-green wd-fg-color-white"
+      >
+        This div is inline, so its 150px width and 50px height are ignored
+      </div>
+      <div className="wd-my-inline-div wd-bg-color-yellow">
+        I&apos;m a div acting inline
+      </div>
     </div>
   );
 }

@@ -12,6 +12,15 @@ export default function Positions() {
             Landscape
           </div>
           <div className="wd-bg-color-red wd-dimension-square">Square</div>
+          <div
+            id="wd-ai-relative"
+            className="wd-ai-pos-relative-nudge wd-bg-color-green wd-fg-color-white wd-dimension-landscape"
+          >
+            AI nudge
+          </div>
+          <div className="wd-pos-relative-nudge-right wd-bg-color-green wd-fg-color-white wd-dimension-landscape">
+            Nudged
+          </div>
         </div>
       </div>
       <div id="wd-css-position-absolute">
@@ -26,16 +35,31 @@ export default function Positions() {
           <div className="wd-pos-absolute-120-20 wd-bg-color-red wd-dimension-square">
             Square
           </div>
+          <div
+            id="wd-ai-absolute"
+            className="wd-ai-pos-absolute-br wd-bg-color-yellow wd-dimension-landscape"
+          >
+            Bottom right
+          </div>
+          <div className="wd-pos-absolute-top-right wd-bg-color-green wd-fg-color-white wd-dimension-square">
+            Top right
+          </div>
         </div>
         <br /><br /><br /><br /><br /><br /><br />
       </div>
       <div id="wd-css-position-fixed">
         <h2>Fixed position</h2>
-        Checkout the blue square that says &quot;Fixed position&quot; stuck all the way
-        on the right and half way down the page. It doesn&apos;t scroll with the
-        rest of the page. Its position is &quot;Fixed&quot;.
+        Checkout the blue square that says &quot;Fixed position&quot; stuck all
+        the way on the right and half way down the page. It doesn&apos;t scroll
+        with the rest of the page. Its position is &quot;Fixed&quot;.
         <div className="wd-pos-fixed wd-dimension-square wd-bg-color-blue wd-fg-color-white">
           Fixed position
+        </div>
+        <div id="wd-ai-fixed" className="wd-ai-pos-fixed wd-bg-color-green wd-fg-color-white">
+          AI fixed
+        </div>
+        <div className="wd-pos-fixed-badge wd-bg-color-red wd-fg-color-white">
+          Hello badge
         </div>
       </div>
     </div>

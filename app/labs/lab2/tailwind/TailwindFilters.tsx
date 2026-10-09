@@ -1,5 +1,6 @@
 export default function TailwindFilters() {
   const src = "/images/reactjs.png";
+  const photo = "/images/hakuba.JPG";
   return (
     <div>
       <h2 className="text-2xl font-bold">Blurs</h2>
@@ -8,6 +9,22 @@ export default function TailwindFilters() {
         <img className="blur-sm w-1/4" src={src} alt="blur sm" />
         <img className="blur-lg w-1/4" src={src} alt="blur lg" />
         <img className="blur-2xl w-1/4" src={src} alt="blur 2xl" />
+      </div>
+      <h3 className="text-lg font-bold mt-4">Contrast and sepia</h3>
+      <div className="flex">
+        <img className="contrast-50 w-1/4" src={photo} alt="contrast 50" />
+        <img className="contrast-100 w-1/4" src={photo} alt="contrast 100" />
+        <img className="contrast-200 w-1/4" src={photo} alt="contrast 200" />
+        <img className="sepia w-1/4" src={photo} alt="sepia" />
+      </div>
+      <div id="wd-ai-filters">
+        <h3 className="text-lg font-bold mt-4">Grayscale and brightness</h3>
+        <div className="flex">
+          <img className="grayscale w-1/4" src={photo} alt="grayscale" />
+          <img className="grayscale-0 w-1/4" src={photo} alt="grayscale 0" />
+          <img className="brightness-50 w-1/4" src={photo} alt="brightness 50" />
+          <img className="brightness-150 w-1/4" src={photo} alt="brightness 150" />
+        </div>
       </div>
     </div>
   );

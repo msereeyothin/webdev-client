@@ -17,6 +17,13 @@ export default function Float() {
         {LOREM} {LOREM}
         <div className="wd-float-done" />
       </div>
+      <div id="wd-ai-float">
+        <div className="wd-float-right wd-dimension-square wd-bg-color-green wd-fg-color-white">
+          Green box
+        </div>
+        <p>{LOREM}</p>
+        <div className="wd-float-done" />
+      </div>
       <div>
         <div className="wd-float-left wd-dimension-portrait wd-bg-color-yellow">
           Yellow
@@ -29,6 +36,17 @@ export default function Float() {
         </div>
         <img className="wd-float-right" src={STARSHIP} alt="Starship" />
         <div className="wd-float-done" />
+        <div>
+          <img
+            className="wd-float-left"
+            src="/images/nodejs.png"
+            alt="Node.js"
+          />
+          <p>
+            This sentence is sooooooooooo long it will wrap around the image.
+          </p>
+          <div className="wd-float-done" />
+        </div>
       </div>
     </div>
   );

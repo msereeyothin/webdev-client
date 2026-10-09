@@ -53,6 +53,25 @@ export default function TailwindGrids() {
             <h3 className="text-lg font-bold">Sidebar</h3>
           </div>
         </div>
+        <div id="wd-ai-grid" className="grid grid-cols-12 gap-2 mt-2">
+          <div className="col-span-3 bg-purple-500 text-white">
+            <h3 className="text-lg font-bold">Three of twelve</h3>
+          </div>
+          <div className="col-span-9 bg-orange-300">
+            <h3 className="text-lg font-bold">Nine of twelve</h3>
+          </div>
+        </div>
+        <div className="grid grid-cols-12 gap-2 mt-2">
+          <div className="col-span-4 bg-teal-500 text-white">
+            <h3 className="text-lg font-bold">Third</h3>
+          </div>
+          <div className="col-span-4 bg-pink-500 text-white">
+            <h3 className="text-lg font-bold">Third</h3>
+          </div>
+          <div className="col-span-4 bg-lime-400">
+            <h3 className="text-lg font-bold">Third</h3>
+          </div>
+        </div>
       </div>
     </div>
   );

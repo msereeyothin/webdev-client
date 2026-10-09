@@ -8,6 +8,10 @@ export default function BackgroundColors() {
           the background of this text is green and the foreground white
         </span>
       </p>
+      <p id="wd-ai-bg" className="wd-bg-color-yellow wd-fg-color-black">
+        A light background like yellow needs dark text to stay readable
+      </p>
+      <p className="wd-bg-color-green wd-fg-color-white">I dislike lemons</p>
     </div>
   );
 }

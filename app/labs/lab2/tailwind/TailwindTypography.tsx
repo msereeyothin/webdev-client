@@ -17,6 +17,12 @@ export default function TailwindTypography() {
       <p className="font-bold">This is bold font weight.</p>
       <p className="font-extrabold">This is extra-bold font weight.</p>
       <p className="font-black">This is black font weight.</p>
+      <p id="wd-ai-type" className="text-2xl font-medium mt-4">
+        This line pairs 2x extra large text with medium weight.
+      </p>
+      <p className="text-xl font-extralight">
+        This line pairs extra large text with extra-light weight.
+      </p>
     </div>
   );
 }

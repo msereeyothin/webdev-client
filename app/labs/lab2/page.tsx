@@ -28,6 +28,16 @@ export default function Lab2() {
         Although it&apos;s very convenient it is considered bad practice and you
         should avoid using the style attribute
       </p>
+      <p
+        id="wd-ai-style-attr"
+        style={{ backgroundColor: "purple", color: "white" }}
+      >
+        Inline styles win over rules from a CSS file, which makes them handy for
+        quick experiments but hard to override later
+      </p>
+      <p style={{ backgroundColor: "green", color: "yellow" }}>
+        This is a paragraph with a green background and yellow color.
+      </p>
       <div id="wd-css-id-selectors">
         <h3>ID selectors</h3>
         <p id="wd-id-selector-1">
@@ -35,19 +45,34 @@ export default function Lab2() {
           name, e.g., P, we can refer to a specific element by its ID
         </p>
         <p id="wd-id-selector-2">
-          Here&apos;s another paragraph using a different ID and a different look
-          and feel
+          Here&apos;s another paragraph using a different ID and a different
+          look and feel
+        </p>
+        <p id="wd-ai-id-selector">
+          An ID selector styles exactly one element, because no two elements on
+          a page should share the same id
+        </p>
+        <p id="wd-id-selector-3">
+          This is the third paragraph in ID selectors :0
         </p>
       </div>
       <div id="wd-css-class-selectors">
         <h3>Class selectors</h3>
         <p className="wd-class-selector">
-          Instead of using IDs to refer to elements, you can use an element&apos;s
-          CLASS attribute
+          Instead of using IDs to refer to elements, you can use an
+          element&apos;s CLASS attribute
         </p>
         <h4 className="wd-class-selector">
           This heading has same style as paragraph above
         </h4>
+        <p className="wd-ai-class-selector">
+          Unlike an id, one class can be shared by many elements
+        </p>
+        <h4 className="wd-ai-class-selector">
+          This heading shares that class with the paragraph above
+        </h4>
+        <p className="wd-your-class">My new style</p>
+        <h4 className="wd-your-class">My new style also appears here</h4>
       </div>
       <div id="wd-css-document-structure">
         <div className="wd-selector-1">
@@ -64,6 +89,14 @@ export default function Lab2() {
               <br />
               <span className="wd-selector-4">
                 Whereas this span is a direct child of its parent
+                <span className="wd-selector-5">
+                  and this one is nested inside it
+                </span>
+              </span>
+              <br />
+              <span className="wd-ai-selector-5">
+                This span matches .wd-selector-1 .wd-ai-selector-5, a descendant
+                two levels down
               </span>
               <br />
               You can combine these relationships to create specific styles
@@ -71,6 +104,15 @@ export default function Lab2() {
             </p>
           </div>
         </div>
+      </div>
+      <div id="wd-css-cascade">
+        <h3>Cascade</h3>
+        <blockquote id="wd-cascade" className="wd-cascade">
+          Which background wins?
+        </blockquote>
+        <p id="wd-ai-cascade" className="wd-ai-cascade">
+          Tag, class, and id rules all set this background, and the id wins
+        </p>
       </div>
       <ForegroundColors />
       <BackgroundColors />

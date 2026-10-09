@@ -6,6 +6,12 @@ export default function TailwindBackgroundColors() {
       <div className="bg-green-500 text-white p-4 mb-4">This div has a green background.</div>
       <div className="bg-blue-500 text-white p-4 mb-4">This div has a blue background.</div>
       <div className="bg-yellow-500 text-black p-4 mb-4">This div has a yellow background.</div>
+      <div id="wd-ai-bg" className="bg-indigo-700 text-white p-4 mb-4">
+        This div has a dark indigo-700 background with white text.
+      </div>
+      <div className="bg-teal-100 text-teal-900 p-4 mb-4">
+        This div has a light teal-100 background with dark teal-900 text.
+      </div>
     </div>
   );
 }

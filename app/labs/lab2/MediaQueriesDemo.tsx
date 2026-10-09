@@ -7,8 +7,11 @@ export default function MediaQueriesDemo() {
         This demo uses CSS media queries to change colors based on screen width:
       </p>
       <ul>
+        <li className="wd-mq-rule-ai">
+          Below 500px: White text on Purple background
+        </li>
         <li className="wd-mq-rule-default">
-          Default is White text on Green background
+          Default (500px to 750px) is White text on Green background
         </li>
         <li className="wd-mq-rule-750">
           750px to 1000px: Black text on Yellow background
@@ -17,7 +20,10 @@ export default function MediaQueriesDemo() {
           1000px to 1250px: White text on Blue background
         </li>
         <li className="wd-mq-rule-1250">
-          Above 1250px: White text on Red background
+          1250px to 1500px: White text on Red background
+        </li>
+        <li className="wd-mq-rule-1500">
+          Above 1500px: Black text on Orange background
         </li>
       </ul>
     </div>
